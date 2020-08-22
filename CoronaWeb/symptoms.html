@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/cssmain.css">
+	<title>CoronaWeb</title>
+</head>
+<body>
+	<div class="container">
+  		<img src="assets\banner.jpg" alt="banner" style="width:100%;">
+		<div class="bottom-right"><a href="home.html">Home</a></div>
+		<div class="bottom-left"><a href="symptoms.html">Symptoms</a></div>
+		<div class="bottom-top"><a href="treatment.html">Treatment</a></div>
+		<div class="top-right"><a href="index.html">Index</a></div>
+	</div>
+	<center>
+		<h1 style = "font-family:courier,arial,helvetica;color: white;font-size: 40px"><u>Symptoms</u></h1>
+	</center>
+
+
+	<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="assets/symptom3.webp" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="assets/symptom2.png" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="assets/symptom1.png" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+	<center>
+		<a href="https://twitter.com/CoronaWeb1" target = "_blank"><img src="assets/icon_t.png"></a>
+		<a href="mailto:officialcoronaweb@gmail.com" target = "_blank"><img src="assets/icon_g.png"></a>
+		<a href="https://www.instagram.com/officialcoronaweb/" target = "_blank"><img src="assets/icon_i.png" width="220px" height="auto"></a>
+		<a href="https://discord.gg/SNyfNA" target = "_blank"><img src="assets/icon_d.png" width="230px" height="auto"></a>
+	</center>
+	
+	
+</body>	
+</html>
