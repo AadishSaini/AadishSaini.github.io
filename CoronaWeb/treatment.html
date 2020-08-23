@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/cssmain.css">
+	<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
 	<title>CoronaWeb</title>
 </head>
 <body>
@@ -17,6 +18,91 @@
 	<center>
 		<h1 style = "font-family:courier,arial,helvetica;color: white;font-size: 40px"><u>Treatment</u></h1>
 	</center>
+	<h2 style="font: 100 25px/1.2 'Merienda One', Helvetica, sans-serif;color: white">
+		If you think you have been exposed to novel coronavirus (COVID-19), and have developed any symptoms (cough, fever or difficulty breathing), call the Govt. of India helpline 1075 or the <a href = "https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">state helpline numbers</a> for assistance.
+	</h2>
+
+
+	<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="assets/test.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="assets/keju.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="assets/symptom1.png" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+
+	<h2 style="font: 200 50px/1.2 'Merienda One', Helvetica, sans-serif;color: white">
+		<center>Note : Make sure to make no unecessary decesions own your own, and take a COVID test by the gov to confirm about COVIDITY.</center>
+	</h2>
+
+	<h2 style="font: 100 25px/1.2 'Merienda One', Helvetica, sans-serif;color: white">
+		<center>Until the Covid test is done make sure you take the Arogya Setu Test also, meanwhile self-quarentine youself untill the docotor advice because if nothing can even happen to you, please think about the most prone adult/senior citizens as this virus spreads like fire in a dry JUNGLE</center>
+	</h2>
+
+	<center><img src="assets/spread.webp"></center>
+	
+	<center>
+	<h1 style="color: white">And there is nothing to fear or think much about this, its just a common cold and cough but lasts for 14 days and after this time period You are 0.1% likely to be infected again!</h1>
+	</center>
+	<center>
+		<h2 style="color: white">These are some graphs according to the WHO concerning about the spread rates and fatality rate and the out of danger cases</h2>
+		<img src="assets/fatal_rate.png">
+		<img src="assets/spread_rate.png">
+		<img src="assets/cured_rate.jpg">
+	</center>
+
+	<h2 style="font: 200 50px/1.2 'Merienda One', Helvetica, sans-serif;color: white">
+		<center>Also visit the official WHO site regarding <a href = "https://www.who.int/health-topics/coronavirus">COVID-19</a></center>
+
 	<center>
 		<a href="https://twitter.com/CoronaWeb1" target = "_blank"><img src="assets/icon_t.png"></a>
 		<a href="mailto:officialcoronaweb@gmail.com" target = "_blank"><img src="assets/icon_g.png"></a>
